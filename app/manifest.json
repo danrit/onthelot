@@ -1,0 +1,20 @@
+{
+  "name": "OnTheLot",
+  "short_name": "OnTheLot",
+  "icons": [
+    {
+      "src": "/app/img/at-favicon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/img/at-favicon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#da291c"
+}
