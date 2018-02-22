@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ha</title>
+  <title>On the lot</title>
   <link rel=manifest href=app/manifest.json>
   <!--<link rel="stylesheet" href="https://unpkg.com/buefy/lib/buefy.min.css">-->
   <link rel="stylesheet" href="third-party/buefy/0.6.3/buefy.min.css">
@@ -12,9 +12,20 @@
 </head>
 <body>
 <div id="root">
-  <div id="app">
-    {{ message }}
-  </div>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Buyer guide</h1>
+      <p class="subtitle">
+        Get <strong>Carsguide</strong> by your side!
+      </p>
+      <ul class="menu-list-DISABLED">
+        <li><a href="honda/civic.html">Honda Civic</a></li>
+        <li><a>...</a></li>
+      </ul>
+
+      {{ message }}
+    </div>
+  </section>
 </div>
 <script>
   // inspired from: https://developers.google.com/web/ilt/pwa/lab-scripting-the-service-worker
@@ -38,12 +49,12 @@
 <script src="third-party/buefy/0.6.3/index3.js"></script>
 <!--<script src="app/app.js"></script>-->
 <script>
-//    var app = new Vue({
-//        el: '#app',
-//        data: {
-//            message: 'Hello Vue!'
-//        }
-//    })
+    var app = new Vue({
+        el: '#root',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
 </script>
 </body>
 </html>
